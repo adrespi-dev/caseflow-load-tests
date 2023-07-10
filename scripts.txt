@@ -1,6 +1,0 @@
-docker-compose exec taurus bash
-
-kubefwd svc -n caseflow2
-
-python3 -m bzt caseflow.yaml
-
