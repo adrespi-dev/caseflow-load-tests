@@ -1,0 +1,19 @@
+execution:
+  - concurrency: 400
+    hold-for: 60s
+    scenario: enqueuer
+
+scenarios:
+  enqueuer:
+    timeout: 500ms
+    keepalive: true
+    requests:
+      - url: http://host.docker.internal:3300/load_test
+        method: POST
+        body-file: records.json
+        headers:
+          Content-Type: application/json
+
+reporting:
+  - module: final-stats
+  - module: console
