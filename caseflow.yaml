@@ -8,7 +8,7 @@ scenarios:
     timeout: 500ms
     keepalive: true
     requests:
-      - url: http://host.docker.internal:3300/load_test
+      - url: http://cf-orchestrator.caseflow2:3000/load_test
         method: POST
         body-file: records.json
         headers:
