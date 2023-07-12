@@ -1,0 +1,20 @@
+execution:
+  - concurrency: 250
+    hold-for: 60s
+    scenario: enqueuer
+
+scenarios:
+  enqueuer:
+    # timeout: 500ms
+    keepalive: true
+    requests:
+      - url: http://tika-test.caseflow2:3000/load_test
+        method: PUT
+        upload-files:
+          - param: file
+            path: bancofallabela.pdf
+            mime-type: application/pdf
+
+reporting:
+  - module: final-stats
+  - module: console
