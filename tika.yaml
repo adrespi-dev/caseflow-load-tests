@@ -1,5 +1,5 @@
 execution:
-  - concurrency: 1
+  - concurrency: 10
     hold-for: 10s
     scenario: enqueuer
 
