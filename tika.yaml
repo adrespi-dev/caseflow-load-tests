@@ -8,7 +8,7 @@ scenarios:
     # timeout: 500ms
     keepalive: true
     requests:
-      - url: http://tika-test.caseflow2:3000/load_test
+      - url: http://tika-test.caseflow2:9998/load_test
         method: PUT
         upload-files:
           - param: file
