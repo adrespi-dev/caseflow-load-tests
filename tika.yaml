@@ -5,7 +5,7 @@ execution:
 
 scenarios:
   enqueuer:
-    # timeout: 500ms
+    timeout: 300000ms
     keepalive: true
     requests:
       - url: http://tika-test.caseflow2:9998/rmeta/text
