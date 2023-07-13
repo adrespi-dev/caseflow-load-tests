@@ -1,6 +1,6 @@
 modules:
   local:
-    capacity: 3
+    capacity: 10
 
 execution:
   - concurrency: 10
