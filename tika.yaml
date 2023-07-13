@@ -1,3 +1,7 @@
+modules:
+  local:
+    capacity: 3
+
 execution:
   - concurrency: 10
     hold-for: 120s
