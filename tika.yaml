@@ -1,9 +1,9 @@
 modules:
   local:
-    capacity: 20
+    capacity: 40
 
 execution:
-  - concurrency: 20
+  - concurrency: 40
     hold-for: 120s
     scenario: enqueuer
 
